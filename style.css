@@ -1,0 +1,451 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left{
+    margin: 0.65rem 0 0 1.25rem;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.96rem;
+    width: 45%;
+
+}
+.nav-left > i{
+    cursor: pointer;
+}
+.home{
+    opacity: 0.6;
+}
+.home:hover{
+    opacity: 1;
+    transform: scale(1.04);
+}
+.search{
+    /* border: 0.9px solid #ddd; */
+    border-radius: 3.25rem;
+    padding: 0.85rem 0 0.55rem 0;
+    font-size: 1.5rem;
+    background-color: #242424;
+    width: 100%;
+    /* opacity: 0.8; */
+    margin-left: -0.95rem;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.search > i{
+    opacity: 0.8;
+}
+.search:hover{
+    background-color: #292929;
+}
+.search > input{
+    font-size: 1rem;
+    font-weight: 600;
+    width: 70%;
+    background-color: transparent;
+    border: hidden;
+    color: #fff;
+}
+.search > i:hover{
+    cursor: pointer;
+    opacity: 1;
+    color: #fff;
+}
+
+.nav-right{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.75rem 0 0 3rem;
+    /* opacity: 0.8; */
+}
+.links a, .control a{
+    text-decoration: none;
+    font-size: 0.89rem;
+    color: #fff;
+    font-weight: 550;
+    opacity: 0.8;
+}
+.links a:hover, .control a:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
+.links{
+    display: flex;
+    column-gap: 0.65rem;
+    width: 21%;
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1.75rem;
+    border-left: 1px solid #fff;
+    padding-left: 1rem;
+    margin-left: 6rem;    
+}
+
+.nav-right > button{
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 2rem;
+    margin-right: 0.55rem;
+    cursor: pointer;
+}
+
+.nav-right > button:hover{
+    transform: scale(1.02);
+    background-color: #eee;
+}
+@media(max-width: 1115px){
+    .control{
+        display: none;
+    }
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.13rem 0.25rem;
+}
+
+.sidebar{
+    width: 30%;
+    background-color: #121212;
+    height: 78.9vh;
+    margin: 0.25rem;
+    border-radius: 8px;
+}
+
+.sidebar > .library{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.25rem 1rem;
+    font-weight: 600;
+}
+.plus{
+    opacity: 0.7;
+    padding: 0.45rem;
+    background-color: transparent;
+}
+.plus:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #232323;
+}
+.cards{
+    background:  #121212;
+    width: 100%;
+    margin: 0.25rem;
+    border-radius: 8px;
+}
+.side-scroll{
+    height: 53%;
+    overflow: hidden;
+}
+.side-scroll:hover{
+    overflow: auto;
+    height: 53%;
+}
+
+.playlist-card{
+    padding: 1rem;
+    margin: 2rem 0.50rem;
+    border-radius: 0.50rem;
+    background-color: #232323;
+}
+.playlist-card > p{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.85rem;
+}
+.playlist-card > span{
+    font-size: 0.85rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
+.playlist-card > button, .btn-podcast, .footer-btn{
+    margin-top: 1rem;
+    background-color: #fff;
+    color: #000;
+    padding: 0.50rem 1rem;
+    border-radius: 1.25rem;
+    font-weight: 800;
+    font-size: 0.75rem;
+    cursor: pointer;
+    border: none;
+}
+.playlist-card > button:hover{
+    transform: scale(1.04);
+    opacity: 0.9;
+    transition: 0.2s ease-in-out;
+}
+
+.podcast{
+    padding: 1rem;
+    margin: 2rem 0.50rem;
+    border-radius: 0.50rem;
+    background-color: #232323;
+    
+}
+.podcast > p{
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+.podcast > span{
+    line-height: 1.50rem;
+    font-size: 0.85rem;
+    font-weight: 550;
+    opacity: 0.8;
+    border: 2px solid #FFF;
+}
+
+.link-l{
+    opacity: 0.8;
+    line-height: 1.75rem;
+    font-size: 0.70rem;
+    margin: 1rem 1.25rem;
+    /* display: flex; */
+
+}
+
+.link-l > span{
+    cursor: pointer;
+}
+.cookies{
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+.cookies:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.eng-btn{
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 1.5rem;
+    color: #fff;
+    padding: 0.45rem 0.86rem;
+    font-weight: 600;
+    margin-left: 1.55rem;
+}
+.eng-btn:hover{
+    transform: scale(1.04);
+    border: 1px solid #fff;
+}
+
+/* Cards pannel of spotify */
+
+.cards{
+    padding: 1.50rem 0 0 2.35rem;
+    overflow: auto;
+    height: 75.4vh;
+}
+.trending-song{
+    font-size: 23px;
+}
+
+.card-box1{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.25rem;
+    margin-right: 0.75rem;
+}
+
+.cards > .card-box1 > .music-box{
+    /* border: 1px solid red; */
+    padding: 0.75rem;
+    border-radius: 0.35rem;
+    background: linear-gradient(180deg, transparent, transparent);
+}
+.cards > .card-box1:hover{
+    cursor: pointer;
+}
+.cards > .card-box1 > .music-box:hover{
+    background: linear-gradient(180deg, transparent, #232323);
+    transform: scale(1.01);
+}
+
+.cards > .card-box1 > .music-box > img{
+    margin-bottom: 0.50rem;
+    width: 100%;
+    border-radius: 0.35rem;
+}
+
+.cards > .card-box1 > .music-box > span{
+    padding: 0.85rem 0 0 0;
+    color: #ddd;
+    line-height: 1.75rem;
+    opacity: 0.7;
+}
+.cards > .card-box1 > .music-box > span{
+    font-size: 0.86rem;
+}
+.cards > .card-box1 > .music-box > span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#card-text:hover{
+    text-decoration: underline;
+}
+
+#radio-text{
+    opacity: 0.7;
+    font-size: 0.84rem;
+    line-height: 1.25rem;
+}
+.popular{
+    display: flex;
+    justify-content: space-between;
+}
+.popular > span{
+    margin-right: 3rem;
+    opacity: 0.6;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+/* Artist panel of spotify */
+
+.artist-box{
+    display: flex;
+    justify-content: center;
+    /* column-gap: 0.25rem; */
+    /* border: 2px solid #000; */
+    margin-top: 1rem;
+    
+}
+.artist-img{
+    justify-content: center;
+    padding: 0.75rem 0 0.50rem 1rem;
+
+}
+.head:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.artist-img:hover{
+    background-color: #343434;
+    border-radius: 0.50rem;
+}
+.artist-name{
+    margin-top: 1rem;
+    line-height: 2rem;
+    font-family: sans-serif;
+}
+
+.artist-box > .artist-img > img{
+    width: 90%;
+    border-radius: 50%;
+}
+.artist-img > span{
+    opacity: 0.7;
+    font-size: 0.85rem;
+}
+#pop:hover{
+    background: #232323;
+}
+
+/* Copyright section of spotify */
+
+.copyright{
+    display: flex;
+    border-top: 2px solid #232323;
+    border-bottom: 2px solid #232323;
+    margin-right: 2rem;
+    padding: 3rem 1rem 2rem 0.50rem;
+    justify-content: space-between;
+    line-height: 30px;
+}
+ .header{
+    font-weight: 600;
+ }
+
+ .foot-para{
+    opacity: 0.6;
+ }
+ .foot-para > p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+ }
+.cp{
+    opacity: 0.6;
+    font-size: 0.95rem;
+}
+ 
+/* icons of social media */
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+}
+.icons > .icon > i{
+    padding: 0.75rem;
+    border-radius: 100%;
+    background-color: #232323;
+}
+.icons > .icon > i:hover{
+    background-color: #666;
+}
+
+/* This is Footer part of spotify */
+
+.footer{
+    background: linear-gradient(90deg, #bf1adc ,rgb(18, 164, 197));
+    height: 65px;
+    position: fixed;
+    bottom: 0;
+    width: 97.5%;
+    margin: 7px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+.footer:hover{
+    cursor: pointer;
+}
+.foot-text{
+    padding: 0.86rem 0;
+    line-height: 20px;
+}
+.foot-text > .first-para{
+    font-weight: 600;
+    font-size: 14px;
+}
+.foot-btn{
+    margin-right: 1.4rem;
+}
+.footer-btn{
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 0.94rem 1.85rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 2rem;
+    margin-top: 0.64rem;
+    /* margin-right: 0.55rem; */
+    cursor: pointer;
+}
